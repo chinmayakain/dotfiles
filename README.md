@@ -4,7 +4,7 @@ This is my personal dotfiles repository. This repository contains my Nix, Nix-Da
 
 ---
 
-> **Caution**  
+> [!CAUTION]  
 > **This setup might break your environment.**  
 > This is an ongoing and unstable configuration. It is highly recommended that you carefully review the setup before applying it to your machine.
 
