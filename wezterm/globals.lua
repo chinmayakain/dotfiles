@@ -8,6 +8,6 @@ return {
   },
   opacity = 1,
   colorscheme = "Tokyo Night Moon",
-  font = "JetBrainsMonoNL-Regular",
+  font = "JetBrainsMonoNL Nerd Font Mono",
   background = "#0E0F15",
 }

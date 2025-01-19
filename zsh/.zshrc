@@ -21,7 +21,7 @@ export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
 # export PATH="~/.console-ninja/.bin:$PATH"
 
 # Load NVM (via Homebrew)
-export NVM_DIR="/opt/homebrew/opt/nvm"
+export NVM_DIR="$(brew --prefix nvm)"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
@@ -62,6 +62,9 @@ setopt share_history
 setopt hist_expire_dups_first
 setopt hist_ignore_dups
 setopt hist_verify
+
+# nix darwin
+alias switch="darwin-rebuild switch --flake ~/dotfiles/nix#air --impure"
 
 # completion using arrow keys (based on history)
 bindkey '^[[A' history-search-backward

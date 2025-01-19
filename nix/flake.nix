@@ -23,6 +23,7 @@
     let
       configuration =
         { pkgs, config, ... }:
+
         {
 
           nixpkgs.config.allowUnfree = true;
@@ -30,6 +31,8 @@
           # $ nix-env -qaP | grep wget
           #----=[ System Packages ]=----#
           environment.systemPackages = [
+            pkgs.xcodes
+            pkgs.skhd
             pkgs.mkalias
             pkgs.vim
             pkgs.neovim
@@ -69,7 +72,6 @@
               "node"
               "nvm"
               "fontconfig"
-              "koekeishiya/formulae/skhd"
             ];
             casks = [
               "google-chrome"
@@ -105,7 +107,7 @@
             nerd-fonts.jetbrains-mono
           ];
 
-          #----=[ Aliases for application indexation ]=----#
+          #----=[ System activation scripts ]=----#
           system.activationScripts.applications.text =
             let
               env = pkgs.buildEnv {
@@ -217,6 +219,7 @@
               # Apple sillicon only
               # enableRosetta = true;
               user = "loki";
+              autoMigrate = true;
             };
           }
           home-manager.darwinModules.home-manager

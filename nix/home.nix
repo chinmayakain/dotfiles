@@ -25,13 +25,11 @@
    ".config/nvim".source = builtins.toPath "/Users/loki/dotfiles/nvim";
    ".config/nix".source = builtins.toPath "/Users/loki/dotfiles/nix";
    ".config/aerospace".source = builtins.toPath "/Users/loki/dotfiles/aerospace";
-   # Link the .tmux.conf file
-  ".tmux.conf".source = builtins.toPath "/Users/loki/dotfiles/tmux/.tmux.conf";
-  
-  # Link the .tmux.reset.conf file
-  ".tmux.reset.conf".source = builtins.toPath "/Users/loki/dotfiles/tmux/tmux.reset.conf";
+   ".config/bat".source = builtins.toPath "/Users/loki/dotfiles/bat";
+   ".tmux.conf".source = builtins.toPath "/Users/loki/dotfiles/tmux/.tmux.conf";
+   ".config/tmux/tmux.reset.conf".source = builtins.toPath "/Users/loki/dotfiles/tmux/tmux.reset.conf";
     # ".config/sketchybar".source = ~/dotfiles/sketchybar;
-    # ".config/ghostty".source = ~/dotfiles/ghostty;
+    ".config/ghostty".source = ~/dotfiles/ghostty;
   };
 
   home.sessionVariables = {
