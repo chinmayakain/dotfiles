@@ -10,7 +10,7 @@ sh <(curl -L https://nixos.org/nix/install)
 
 # Step 2: Source the profile to load Nix into the current shell
 echo "Sourcing the profile to activate Nix..."
-source ~/.nix-profile/etc/profile.d/nix.sh
+source /nix/var/nix/profiles/default/etc/profile.d/nix.sh
 
 # Step 3: Check Nix activation
 echo "Checking Nix activation..."
