@@ -1,6 +1,6 @@
 # Dotfiles
 
-Welcome to my personal dotfiles repository. This repository contains my Nix, Nix-Darwin, and various other configurations for macOS, including shell, tmux, wezterm, and more. The configurations are managed using Home Manager and Nix-Darwin, providing a declarative and reproducible environment.
+This is my personal dotfiles repository. This repository contains my Nix, Nix-Darwin, and various other configurations for macOS, including shell, tmux, wezterm, and more. The configurations are managed using Home Manager and Nix-Darwin, providing a declarative and reproducible environment.
 
 ---
 
