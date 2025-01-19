@@ -1,0 +1,5 @@
+# APPS #
+
+# Terminal
+alt - ~ : run-external "open" "-a" "/Applications/WezTerm.app"
+			

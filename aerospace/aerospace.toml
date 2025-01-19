@@ -1,0 +1,203 @@
+# General Information
+# Copy this config to ~/.aerospace.toml
+# Edit ~/.aerospace.toml as needed. Missing keys will fall back to "default-config.toml"
+# Enable "Group windows by application" under mission control
+
+# Startup Commands
+# Commands run after macOS user login (requires 'start-at-login = true')
+after-login-command = []
+
+# Commands run after AeroSpace startup (after 'after-login-command')
+after-startup-command = []
+
+# General Settings
+# Enable AeroSpace startup at login
+start-at-login = true
+
+# Normalization settings
+enable-normalization-flatten-containers = true
+enable-normalization-opposite-orientation-for-nested-containers = true
+
+# Layout settings
+accordion-padding = 30
+default-root-container-layout = 'accordion'
+default-root-container-orientation = 'auto'
+
+# Key Mapping
+# Preset keyboard mapping (possible values: qwerty, dvorak)
+key-mapping.preset = 'qwerty'
+
+# Focus and Mouse Behavior
+on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
+on-focus-changed = ['move-mouse window-lazy-center']
+
+# Gaps Configuration
+[gaps]
+inner.horizontal = 10
+inner.vertical = 10
+outer.left = 10
+outer.bottom = 10
+outer.top = 10
+outer.right = 10
+
+# Binding Modes
+# 'main' binding mode (must always be present)
+[mode.main.binding]
+
+# Layout Commands
+alt-slash = 'layout tiles horizontal vertical'
+alt-comma = 'layout accordion horizontal vertical'
+
+# Focus Commands
+alt-h = 'focus left'
+alt-j = 'focus down'
+alt-k = 'focus up'
+alt-l = 'focus right'
+
+# Movement Commands
+alt-shift-h = 'move left'
+alt-shift-j = 'move down'
+alt-shift-k = 'move up'
+alt-shift-l = 'move right'
+
+# Resize Commands
+alt-shift-minus = 'resize smart -50'
+alt-shift-equal = 'resize smart +50'
+
+# Workspace Commands
+alt-1 = ['workspace 1', 'move-mouse monitor-lazy-center']
+alt-2 = ['workspace 2', 'move-mouse monitor-lazy-center']
+alt-3 = ['workspace 3', 'move-mouse monitor-lazy-center']
+alt-4 = ['workspace 4', 'move-mouse monitor-lazy-center']
+alt-5 = ['workspace 5', 'move-mouse monitor-lazy-center']
+alt-6 = ['workspace 6', 'move-mouse monitor-lazy-center']
+alt-7 = ['workspace 7', 'move-mouse monitor-lazy-center']
+alt-8 = ['workspace 8', 'move-mouse monitor-lazy-center']
+alt-9 = ['workspace 9', 'move-mouse monitor-lazy-center']
+alt-a = ['workspace A', 'move-mouse monitor-lazy-center']
+alt-b = ['workspace B', 'move-mouse monitor-lazy-center']
+alt-c = ['workspace C', 'move-mouse monitor-lazy-center']
+alt-d = ['workspace D', 'move-mouse monitor-lazy-center']
+alt-p = ['workspace P', 'move-mouse monitor-lazy-center']
+alt-m = ['workspace M', 'move-mouse monitor-lazy-center']
+alt-t = ['workspace T', 'move-mouse monitor-lazy-center']
+alt-v = ['workspace V', 'move-mouse monitor-lazy-center']
+alt-n = ['workspace N', 'move-mouse monitor-lazy-center']
+
+# Move Node to Workspace Commands
+alt-shift-1 = 'move-node-to-workspace 1'
+alt-shift-2 = 'move-node-to-workspace 2'
+alt-shift-3 = 'move-node-to-workspace 3'
+alt-shift-4 = 'move-node-to-workspace 4'
+alt-shift-5 = 'move-node-to-workspace 5'
+alt-shift-6 = 'move-node-to-workspace 6'
+alt-shift-7 = 'move-node-to-workspace 7'
+alt-shift-8 = 'move-node-to-workspace 8'
+alt-shift-9 = 'move-node-to-workspace 9'
+alt-shift-a = 'move-node-to-workspace A'
+alt-shift-b = 'move-node-to-workspace B'
+alt-shift-c = 'move-node-to-workspace C'
+alt-shift-d = 'move-node-to-workspace D'
+alt-shift-p = 'move-node-to-workspace P'
+alt-shift-m = 'move-node-to-workspace M'
+alt-shift-t = 'move-node-to-workspace T'
+alt-shift-v = 'move-node-to-workspace V'
+alt-shift-n = 'move-node-to-workspace N'
+
+# Other Commands
+alt-shift-f = "fullscreen"
+alt-tab = 'workspace-back-and-forth'
+alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
+alt-shift-semicolon = 'mode service'
+
+# 'service' binding mode
+[mode.service.binding]
+esc = ['reload-config', 'mode main']
+r = ['flatten-workspace-tree', 'mode main']                # Reset layout
+f = ['layout floating tiling', 'mode main']                # Toggle floating/tiling layout
+backspace = ['close-all-windows-but-current', 'mode main']
+alt-shift-h = ['join-with left', 'mode main']
+alt-shift-j = ['join-with down', 'mode main']
+alt-shift-k = ['join-with up', 'mode main']
+alt-shift-l = ['join-with right', 'mode main']
+
+# Workspace to Monitor Assignment
+[workspace-to-monitor-force-assignment]
+C = "Built-in Retina Display"
+A = "Built-in Retina Display"
+M = "Built-in Retina Display"
+N = "Built-in Retina Display"
+6 = "Built-in Retina Display"
+7 = "Built-in Retina Display"
+8 = "Built-in Retina Display"
+9 = "Built-in Retina Display"
+B = ["DELL SE2723DS", "Built-in Retina Display"]
+T = ["DELL SE2723DS", "Built-in Retina Display"]
+V = ["DELL SE2723DS", "Built-in Retina Display"]
+D = ["DELL SE2723DS", "Built-in Retina Display"]
+P = ["DELL SE2723DS", "Built-in Retina Display"]
+1 = ["DELL SE2723DS", "Built-in Retina Display"]
+2 = ["DELL SE2723DS", "Built-in Retina Display"]
+3 = ["DELL SE2723DS", "Built-in Retina Display"]
+4 = ["DELL SE2723DS", "Built-in Retina Display"]
+5 = ["DELL SE2723DS", "Built-in Retina Display"]
+
+# Custom Keybindings for Monitor Focus
+alt-i = 'focus-monitor "Built-in Retina Display"' # Focus primary monitor
+alt-o = 'focus-monitor "DELL SE2723DS"'           # Focus secondary monitor
+
+# App IDs
+# [[app_ids]]
+# terminals = [ 'com.github.wez.wezterm']
+# browsers = [ 'com.google.Chrome']
+# communications = [ 'com.tinyspeck.slackmacgap']
+# code = [ 'com.microsoft.VSCode']
+# notes = [ 'md.obsidian']
+# devTools = [ 'org.pgadmin.pgadmin4']
+# microsoft = [ 'com.microsoft.teams2', 'com.apple.mail', 'com.microsoft.Outlook']
+
+# Window Detection Rules
+[[on-window-detected]]
+if.app-id = 'com.github.wez.wezterm'
+run = "move-node-to-workspace T"
+
+[[on-window-detected]]
+if.app-id = 'com.google.Chrome'
+run = "move-node-to-workspace B"
+
+[[on-window-detected]]
+if.app-id = 'com.tinyspeck.slackmacgap'
+run = "move-node-to-workspace C"
+
+[[on-window-detected]]
+if.app-id = 'com.microsoft.VSCode'
+run = "move-node-to-workspace V"
+
+[[on-window-detected]]
+if.app-id = 'com.microsoft.teams2'
+run = "move-node-to-workspace M"
+
+[[on-window-detected]]
+if.app-id = 'md.obsidian'
+run = "move-node-to-workspace N"
+
+[[on-window-detected]]
+if.app-id = 'com.apple.mail'
+run = "move-node-to-workspace M"
+
+[[on-window-detected]]
+if.app-id = 'org.pgadmin.pgadmin4'
+run = "move-node-to-workspace D"
+
+[[on-window-detected]]
+if.app-id = 'com.microsoft.Outlook'
+run = "move-node-to-workspace M"
+
+[[on-window-detected]]
+if.app-id = 'com.microsoft.edgemac'
+run = "move-node-to-workspace 6"
+
+[[on-window-detected]]
+if.app-id = 'com.electron.cypress'
+run = "move-node-to-workspace 6"
+
