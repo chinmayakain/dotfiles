@@ -8,9 +8,9 @@
 echo "Installing Nix..."
 sh <(curl -L https://nixos.org/nix/install)
 
-# Step 2: Restart shell session to activate Nix
-echo "Restarting shell session to activate Nix..."
-exec $SHELL -l
+# Step 2: Source the profile to load Nix into the current shell
+echo "Sourcing the profile to activate Nix..."
+source ~/.nix-profile/etc/profile.d/nix.sh
 
 # Step 3: Check Nix activation
 echo "Checking Nix activation..."
@@ -20,9 +20,9 @@ nix-shell -p neofetch --run neofetch
 echo "Starting to use Nix and Nix-Darwin..."
 nix run nix-darwin --extra-experimental-features "nix-command flakes" -- switch --flake ~/dotfiles/nix#air --impure
 
-# Step 5: Restart shell session to apply Nix-Darwin changes
-echo "Restarting shell session to apply Nix-Darwin configuration..."
-exec $SHELL -l
+# Step 5: Source the profile again to apply Nix-Darwin changes
+echo "Sourcing profile to apply Nix-Darwin configuration..."
+source ~/.nix-profile/etc/profile.d/nix.sh
 
 # Step 6: Install Node.js with NVM
 echo "Setting up Node.js with NVM..."
@@ -33,9 +33,8 @@ echo "Installing TPM (Tmux Plugin Manager)..."
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 tmux source ~/.tmux.conf
 
-# Step 8: Restart shell session to apply all changes
-echo "Final restart of shell session..."
-exec $SHELL -l
+# Step 8: Refresh the shell without restarting it
+echo "Refreshing shell session to apply changes..."
+source ~/.zshrc
 
 echo "Installation complete!"
-
