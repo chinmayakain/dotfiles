@@ -16,6 +16,8 @@ source /nix/var/nix/profiles/default/etc/profile.d/nix.sh
 echo "Checking Nix activation..."
 nix-shell -p neofetch --run neofetch
 
+xcode-select --install
+
 # Step 4: Install and switch to Nix-Darwin with your flake
 echo "Starting to use Nix and Nix-Darwin..."
 nix run nix-darwin --extra-experimental-features "nix-command flakes" -- switch --flake ~/dotfiles/nix#air --impure
