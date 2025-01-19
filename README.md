@@ -22,6 +22,9 @@ cd ~/dotfiles/setup
 ./install.sh
 ```
 
+> [!WARNING]
+> Do not use `sudo` for installation 
+
 This will automatically install and configure the necessary software, including Nix, Nix-Darwin, and other environment setups.
 
 ### Additional Information
