@@ -1,0 +1,1 @@
+return { theme = "rose-pine" }
