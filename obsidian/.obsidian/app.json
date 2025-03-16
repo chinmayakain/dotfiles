@@ -1,22 +1,5 @@
 {
   "promptDelete": false,
   "attachmentFolderPath": "70 - Assets",
-  "spellcheckDictionary": [
-    "Pitstop",
-    "Pitstop",
-    "Holdership",
-    "oldership)",
-    "returnToIssuer",
-    "holdership",
-    "holdership",
-    "ETRs",
-    "pitstop-x",
-    "pitstop-y",
-    "pitstop-y",
-    "pitstop-z",
-    "pitstop-y",
-    "pitstop-y",
-    "pitstop-a",
-    "enums"
-  ]
+  "spellcheckDictionary": []
 }
