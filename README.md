@@ -32,5 +32,5 @@ This will automatically install and configure the necessary software, including 
 **Home Manager:** Used to manage dotfiles and shell configurations.
 **Nix-Darwin:** A tool to manage macOS configurations declaratively.
 
-### Warning:
+### 🚧 Warning 🚧
 This configuration is still a work in progress. It may break certain configurations or software on your system. Please proceed with caution and make sure you understand the changes this configuration will apply.
