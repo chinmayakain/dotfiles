@@ -1,0 +1,26 @@
+{
+  "callouts": {
+    "custom": [],
+    "settings": {
+      "advice": [
+        {
+          "changes": {
+            "icon": "lucide-hand-heart"
+          }
+        }
+      ],
+      "check": [
+        {
+          "changes": {
+            "icon": "lucide-rocket"
+          }
+        }
+      ]
+    }
+  },
+  "calloutDetection": {
+    "obsidian": true,
+    "theme": true,
+    "snippet": true
+  }
+}

@@ -1,0 +1,44 @@
+.callout[data-callout="note"] {
+  --callout-color: 249, 249, 14;
+  --callout-icon: lucide-align-left;
+}
+
+.callout[data-callout="anecdote"] {
+  --callout-color: 192, 132, 252;
+  --callout-icon: lucide-messages-square;
+}
+
+.callout[data-callout="insight"] {
+  --callout-color: 251, 191, 36;
+  --callout-icon: lucide-chart-network;
+}
+
+.callout[data-callout="advice"] {
+  --callout-color: 55, 238, 182;
+  --callout-icon: lucide-hand-heart;
+}
+
+.callout[data-callout="license-info"] {
+  --callout-color: 28, 178, 242;
+  --callout-icon: lucide-key-round;
+}
+
+.callout[data-callout="resource-links"] {
+  --callout-color: 28, 178, 242;
+  --callout-icon: lucide-qr-code;
+}
+
+.callout[data-callout="project-goals"] {
+  --callout-color: 253, 124, 206;
+  --callout-icon: lucide-target;
+}
+
+.callout[data-callout="project-links"] {
+  --callout-color: 253, 124, 206;
+  --callout-icon: lucide-link;
+}
+
+.callout[data-callout="references"] {
+  --callout-color: 247, 130, 130;
+  --callout-icon: lucide-newspaper;
+}

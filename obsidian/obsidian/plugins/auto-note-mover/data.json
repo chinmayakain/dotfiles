@@ -1,0 +1,28 @@
+{
+  "trigger_auto_manual": "Automatic",
+  "use_regex_to_check_for_tags": false,
+  "statusBar_trigger_indicator": true,
+  "folder_tag_pattern": [
+    {
+      "folder": "40 - Archives/41 - Features",
+      "tag": "#archived",
+      "pattern": ""
+    },
+    {
+      "folder": "20 - Planning/22 - Current Features",
+      "tag": "#feature",
+      "pattern": ""
+    },
+    {
+      "folder": "30 - Notes/32 - Meetings",
+      "tag": "#mtg",
+      "pattern": ""
+    }
+  ],
+  "use_regex_to_check_for_excluded_folder": false,
+  "excluded_folder": [
+    {
+      "folder": ""
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "cssTheme": "AnuPpuccin",
+  "theme": "obsidian",
+  "accentColor": "",
+  "enabledCssSnippets": [
+    "custom-callouts",
+    "main",
+    "progress-bar",
+    "view"
+  ]
+}
