@@ -1,13 +1,22 @@
 command = /Users/loki/dotfiles/ghostty/scripts/tmux-attach.sh
-font-family = JetBrainsMonoNL Nerd Font Mono 
-font-size = 16
+font-family = JetBrainsMono Nerd Font
+font-size = 15
 shell-integration-features = no-cursor,sudo,no-title
 cursor-style = block
 mouse-hide-while-typing = true
 mouse-scroll-multiplier = 2
 window-padding-balance = true 
 window-save-state = always
-macos-titlebar-style=transparent
+macos-titlebar-style = hidden
+
+# shaders
+# additional shaders could be referenced from here - https://github.com/hackrmomo/ghostty-shaders
+# custom-shader = shaders/bloom.glsl
+# custom-shader = shaders/bloom1.glsl
+# custom-shader = shaders/bloom075.glsl
+# custom-shader = shaders/bloom060.glsl
+# custom-shader = shaders/bloom050.glsl
+custom-shader = shaders/bloom025.glsl
 
 # keybindings
 keybind = cmd+s>r=reload_config
@@ -15,7 +24,8 @@ keybind = cmd+s>r=reload_config
 # other
 copy-on-select = clipboard
 
-theme = tokyonight
+# theme = tokyonight
+config-file = custom-themes/variation-1
 background-blur-radius = 20
 window-decoration = true
 macos-option-as-alt = true
